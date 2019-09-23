@@ -88,7 +88,7 @@
     </dependencies>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
     </properties>
 
 
@@ -140,7 +140,7 @@
                                 <arguement>-e</arguement>
                                 <arguement>MYSQL_ROOT_PASSWORD=123456</arguement>
                                 <arguement>-e</arguement>
-                                <arguement>MYSQL_DATABASE=test-data</arguement>
+                                <arguement>MYSQL_DATABASE=test</arguement>
                                 <arguement>-p</arguement>
                                 <arguement>3307:3306</arguement>
                                 <arguement>-d</arguement>
@@ -188,9 +188,9 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>5.0.3</version>
                 <configuration>
-                    <url>jdbc:mysql://localhost:3305/data</url>
+                    <url>jdbc:mysql://localhost:3306/data?useSSL=false&amp;allowPublicKeyRetrieval=true</url>
                     <user>root</user>
-                    <password>123455</password>
+                    <password>123456</password>
                 </configuration>
                 <executions>
                     <execution>
@@ -200,9 +200,9 @@
                             <goal>migrate</goal>
                         </goals>
                         <configuration>
-                            <url>jdbc:mysql://localhost:3306/data</url>
+                            <url>jdbc:mysql://localhost:3307/test?useSSL=false&amp;allowPublicKeyRetrieval=true</url>
                             <user>root</user>
-                            <password>123455</password>
+                            <password>123456</password>
                         </configuration>
                     </execution>
                 </executions>

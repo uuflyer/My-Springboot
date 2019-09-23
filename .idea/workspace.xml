@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e1fd85-fd8e-4918-8cc6-a9cc50398574" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_User.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/integration/MyIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/gs-spring-boot.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/integration/MyIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/integration/MyIntegrationTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,17 +36,14 @@
         <item name="data@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="data@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="data: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="gs-spring-boot" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,12 +53,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>blog-server.hunger-valley.com</find>
-      <find>er</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -90,29 +80,33 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2689655" />
-    <property name="settings.editor.selected.configurable" value="project.scopes" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="hello.controller" />
       <recent name="hello.service" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Myproject\src\main\resources\static" />
-      <recent name="E:\Myproject\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="hello.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Myproject\src\test\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="hello.service" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Myproject\src\main\resources\static" />
+      <recent name="E:\Myproject\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -127,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="JUnit.MyIntegrationTest">
     <configuration name="AuthControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gs-spring-boot" />
       <extension name="coverage">
@@ -159,6 +153,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gs-spring-boot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hello.integration" />
+      <option name="MAIN_CLASS_NAME" value="hello.integration.MyIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyIntegrationTest.indexHtmlIsAccessible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gs-spring-boot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hello.integration" />
+      <option name="MAIN_CLASS_NAME" value="hello.integration.MyIntegrationTest" />
+      <option name="METHOD_NAME" value="indexHtmlIsAccessible" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gs-spring-boot" />
       <extension name="coverage">
@@ -174,38 +199,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.returnUserDetailsWhenUserFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gs-spring-boot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hello.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hello.service" />
-      <option name="MAIN_CLASS_NAME" value="hello.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="returnUserDetailsWhenUserFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.throwExceptionWhenUserNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gs-spring-boot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hello.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hello.service" />
-      <option name="MAIN_CLASS_NAME" value="hello.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="throwExceptionWhenUserNotFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gs-spring-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="hello.Application" />
@@ -215,13 +208,23 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyIntegrationTest" />
+        <item itemvalue="JUnit.MyIntegrationTest.indexHtmlIsAccessible" />
         <item itemvalue="JUnit.AuthControllerTest.testLogin" />
         <item itemvalue="JUnit.AuthControllerTest" />
         <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.returnUserDetailsWhenUserFound" />
-        <item itemvalue="JUnit.UserServiceTest.throwExceptionWhenUserNotFound" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Lenovo\AppData\Roaming\Subversion</configuration>
@@ -246,41 +249,11 @@
       <workItem from="1569202261882" duration="1805000" />
       <workItem from="1569204275182" duration="2000" />
       <workItem from="1569207482659" duration="890000" />
-      <workItem from="1569208405857" duration="257000" />
+      <workItem from="1569208405857" duration="544000" />
+      <workItem from="1569208984164" duration="980000" />
+      <workItem from="1569210000855" duration="9031000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="AuthControllerTest_testLogin - 2019.09.22 at 10h 00m 46s.xml">
-      <configuration name="AuthControllerTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2019.09.22 at 10h 00m 56s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AuthControllerTest - 2019.09.22 at 10h 01m 05s.xml">
-      <configuration name="AuthControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AuthControllerTest_testLogin - 2019.09.22 at 10h 02m 52s.xml">
-      <configuration name="AuthControllerTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AuthControllerTest_testLogin - 2019.09.22 at 10h 15m 13s.xml">
-      <configuration name="AuthControllerTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AuthControllerTest_testLogin - 2019.09.22 at 10h 22m 23s.xml">
-      <configuration name="AuthControllerTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AuthControllerTest_testLogin - 2019.09.22 at 10h 25m 36s.xml">
-      <configuration name="AuthControllerTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AuthControllerTest_testLogin - 2019.09.22 at 10h 26m 51s.xml">
-      <configuration name="AuthControllerTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AuthControllerTest_testLogin - 2019.09.22 at 10h 27m 59s.xml">
-      <configuration name="AuthControllerTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AuthControllerTest_testLogin - 2019.09.22 at 10h 28m 56s.xml">
-      <configuration name="AuthControllerTest.testLogin" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -311,81 +284,5 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2689655" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web (gs-spring-boot)|Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2689655" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2689655" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2689655" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>gs-spring-boot</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2689655" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2689655" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
