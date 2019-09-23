@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e1fd85-fd8e-4918-8cc6-a9cc50398574" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/integration/MyIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/integration/MyIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -251,7 +247,7 @@
       <workItem from="1569207482659" duration="890000" />
       <workItem from="1569208405857" duration="544000" />
       <workItem from="1569208984164" duration="980000" />
-      <workItem from="1569210000855" duration="9031000" />
+      <workItem from="1569210000855" duration="9784000" />
     </task>
     <servers />
   </component>
