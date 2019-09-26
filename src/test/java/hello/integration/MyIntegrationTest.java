@@ -1,6 +1,10 @@
 package hello.integration;
 
 import hello.Application;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -11,10 +15,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import javax.inject.Inject;
 import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 
 
 @ExtendWith(SpringExtension.class)
@@ -25,15 +25,16 @@ public class MyIntegrationTest {
     Environment environment;
 
     @Test
-    public void indexHtmlIsAccessible() throws IOException, InterruptedException {
+    public void notLoggedInByDefault() throws IOException, InterruptedException {
         String port = environment.getProperty("local.server.port");
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("http://localhost:" + port + "/auth"))
-                .build();
 
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        Assertions.assertEquals(200, response.statusCode());
-        Assertions.assertTrue(response.body().contains("用户没有登录"));
+        try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
+            HttpGet httpGet = new HttpGet("http://localhost:" + port + "/auth");
+            httpClient.execute(httpGet, httpResponse -> {
+                Assertions.assertEquals(200, httpResponse.getStatusLine().getStatusCode());
+                Assertions.assertTrue(EntityUtils.toString(httpResponse.getEntity()).contains("用户没有登录"));
+                return null;
+            });
+        }
     }
 }

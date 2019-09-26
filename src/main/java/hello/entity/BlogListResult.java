@@ -8,7 +8,7 @@ public class BlogListResult extends Result<List<Blog>> {
     private int totalPage;
 
     public static BlogListResult success(List<Blog> data, int total, int page, int totalPage) {
-        return new BlogListResult(ResultStatus.OK, "获取成功", data, page, total, totalPage);
+        return new BlogListResult(ResultStatus.OK, "获取成功", data, total, page, totalPage);
     }
 
 

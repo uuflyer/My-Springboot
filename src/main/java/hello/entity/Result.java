@@ -30,8 +30,8 @@ public abstract class Result<T> {
         return data;
     }
 
-    public ResultStatus getStatus() {
-        return status;
+    public String getStatus() {
+        return status.status;
     }
 
     public String getMsg() {
