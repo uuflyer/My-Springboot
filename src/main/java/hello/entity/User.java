@@ -21,7 +21,8 @@ public class User {
         this.id = id;
         this.username = username;
         this.encryptedPassword = encryptedPassword;
-        this.avatar = "";
+        this.avatar = "https://i.postimg.cc/Vvtb5xbS/3.jpg";
+
         this.createdAt = Instant.now();
         this.updatedAt = Instant.now();
     }
